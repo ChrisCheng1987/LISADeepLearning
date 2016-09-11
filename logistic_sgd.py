@@ -120,7 +120,7 @@ def sgd_optimization_mnist(learning_rate=0.13, n_epochs=1000,dataset='mnist.pkl.
 	x = T.matrix('x') # 'x' is the name of the matrix variable x
 	y = T.ivector('y')
 	
-	classifier = LogisticRegression(input=x,n_in=28*28,n_out=10)
+	classifier = LogisticRegression(input=x,n_in=28*28,n_out=10) # instantialize an class object called classifier
 	
 	cost = classifier.negative_log_likelihood(y);
 	
